@@ -1,0 +1,31 @@
+GET http://localhost:3000/
+
+### To find songs
+
+GET http://localhost:3000/songs
+
+
+###To find particular song with id
+
+GET http://localhost:3000/songs/1
+
+
+###To Create a new Songs
+
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+    "title" : "blue",
+    "artist" : ["martin","garrix","david guetta"],
+    "releaseDate" : "2022-09-02",
+    "duration" : "02:33"
+}
+
+###To Update a songs
+
+PUT http://localhost:3000/songs/1
+
+###To delete the songs
+
+DELETE http://localhost:3000/songs/1
